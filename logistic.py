@@ -5,11 +5,11 @@ import numpy as np
 # import matplotlib.pyplot as plt
 import pandas as pd
 
+
 X_train_dataset = pd.read_csv('data/X_train')
 Y_train_dataset = pd.read_csv('data/Y_train')
 
-# X_train = X_train_dataset.iloc[:, :-1].values
-# y = dataset.iloc[:, 3].values
+
 X_train = X_train_dataset.iloc[:, 1:].values.astype(np.float64)
 Y_train = Y_train_dataset.iloc[:].values
 
